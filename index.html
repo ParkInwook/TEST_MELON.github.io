@@ -9,6 +9,18 @@
     <link rel="stylesheet" href="css/melon_header.css">
     <link rel="stylesheet" href="css/melon_section.css">
     <link rel="stylesheet" href="css/melon_footer.css">
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+
+        $(document).ready(function() {
+            $(".chart_rank li").mouseover(function() {
+                $(".chart_rank li").removeClass("on"); //on삭제
+                $(this).addClass("on");
+            })
+            
+        });
+    </script>
 
 </head>
 <body>
@@ -21,10 +33,10 @@
                 </div>
                 <div class="top_right">
                     <ul>
-                        <li><a href="#">이용권구매</a></li>
-                        <li><a href="#">멜론혜택관</a></li>
-                        <li><a href="#">이벤트</a></li>
-                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#"><span class="m1">이용권구매</span></a></li>
+                        <li><a href="#"><span>멜론혜택관</span></a></li>
+                        <li><a href="#"><span>이벤트</span></a></li>
+                        <li><a href="#"><span>공지사항</span></a></li>
                     </ul>
                 </div>
             </div>
@@ -376,18 +388,17 @@
                     </div>
                 </div>
             </div><!-- chart -->
-            
+
             <div class="notice" style="clear: both;">
                 <p class="label">공지사항</p>
                 <p class="content">멜론 서비스 점검 안내(순단현상 발생)<span></span></p>
                 <p class="date">2021.09.23</p>
             </div>
-            
-        </div><!-- wrap -->
 
+        </div><!-- wrap -->
     </section>
 
-    <footer id="footer" style="margin-top: 50px;">
+    <footer id="footer">
         <div class="footer_wrap">
             <div class="footer_top">
                 <!-- 상위 -->
@@ -432,6 +443,8 @@
             </div>
         </div>
         </footer>
-
+		
+        
+		
 </body>
 </html>
